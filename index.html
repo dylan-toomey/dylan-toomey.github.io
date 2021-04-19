@@ -11,53 +11,83 @@
     <div id="header-color">
       <header id="header-text">
         <ul class="header-layout"> 
-          <li id="home-header"><img class="home-img" src="images\home.png" alt="Home"></li>
           <li id="main-header">Dylan Toomey Blog</li>  
-          <span id="feedback-header"><li id="feedback-col">Feedback</li></span>
         </ul>
     </header>
     </div>
 
-    <nav class="main-nav">
-      <ul class="nav-list">
-        <li class="categories">CSS</li>
-        <li class="feedback">HTML</li>
-        <li class="feedback">Lorem</li>
-        <li class="feedback">Contact</li>
-        <li class="feedback">About Me</li>
+    <nav>
+      <ul class="navigation">
+        <li class="categories"><a class="nav-link" href="">Projects</a></li>
+        <li class="categories"><a class="nav-link" href="">Reflections</a></li>
+        <li class="categories"><a class="nav-link" href="">About Me</a></li>
       </ul>
     </nav>
 
     
 
-
     <main>
-      <h1 class="content">Hello & welcome to my Blog.</h1>
-      <h2>My name is Dylan Toomey <em>A foot accustomed to running over roots makes the speediest runner.</em> (Optional SUB title) </h2>
-      <h3>10 November 2010</h3>
+      <div id="container">
+      <div class= "main-content">
+        <div id="welcome-message">
+          <h1 class="content">Kia Ora</h1>
+          <h1 class="content">Welcome to my Blog</h1>
+          <img id="profile-image" src="images/profile.png" alt="Profile image">
+          <div class="icons">
+            <ul class="icon-img">
+              <li><a href="https://github.com/dylan-toomey" target="_blank"><img class= "contact-img" id="contact-git" src="images\github.png" alt="Profile Image"></a></li>
+              <li><a href="https://www.linkedin.com/in/dylan-toomey-a4a3b3ab/" target="_blank"><img class="contact-img" id="contact-lnk" src="images\linkedin.png" alt="Profile Image"></a></li>
+              <li><a href="mailto: dtoomery322@gmail.com" target="_blank"><img class="contact-img" id="contact-email" src="images\email.png" alt="Profile Image"></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+
+
+        <div class="newsfeed">
+          <h1 id="postfeed">Post Feed</h1>
+          <a class="card-link" href=""><article class="reflection">
+            <content class="post-content">
+              <h1>Sprint 1 Reflections</h1>
+              <p>Command line, Git Hub, & Personal reflections</p>
+              <p class="Date">Posted: <em>19/04/2021</em></p>
+            </content>
+          </article></a>
+
+          <a class="card-link" href=""><article class="project">
+            <content class="post-content">
+              <h1>HTML & CSS Project</h1>
+              <p>Document a HTML or CSS topic</p>
+              <p class="Date">Posted: <em>19/04/2021</em></p>
+            </content>
+          </article></a>
+
+          <a class="card-link" href=""><article class="project">
+            <content class="post-content">
+              <h1>lorum impsom</h1>
+              <p>lorum impsom</p>
+              <p class="Date">Posted: <em>19/04/2021</em></p>
+            </content>
+          </article></a>
+
+
+          <a class="card-link" href=""><article class="project">
+            <content class="post-content">
+              <h1>lorum impsom</h1>
+              <p>lorum impsom</p>
+              <p class="Date">Posted: <em>19/04/2021</em></p>
+            </content>
+          </article></a>
       
-      <p>
-        Te Houtaewa was the fastest runner of his day and played many pranks on his peoples enemies. One morning his mother wanted kumara for the hangi (earth oven) and asked Te Houtaewa to go to the gardens at Te Kao, a short distance away. He agreed to fetch the kumara and told his mother to prepare the hangi.
-      </p>
-      <p>
-        Instead of going to the nearby gardens, Te Houtaewa set off for Ahipara as he wanted to annoy some Te Rarawa people who lived there. Carrying two large baskets for the kumara, he ran like the wind, completing the journey over the hard sands of Te Oneroa a Tohe (Ninety Mile Beach) in the few hours it takes a good hangi to heat up properly. On reaching Ahipara, he went straight to the people's kumara pataka (storehouse for the sweet potatoes) situated at the foot of the hill Whangatauatia.
-      </p>
-      <p>
-        While Te Houtaewa was filling his baskets with kumara he was spotted stealing the kai (food). He was immediately recognised.
-      </p>
+
+
+
+      </div>
+
       
       <!-- this is not a comment. -->
     
     </main>
-
-    <div class="popup-about">
-      <span><img id="profile-about" src="images\profile.png" alt="Find out More"></span>
-      <div id="chat-box">
-        <div id="chatter">
-          <span id="chat-text">Thank you for comming to my Blog, if you want to know more about me you can visit my <a href=""><br>about page.</a></span>
-        </div>
-      </div>
-    </div>
-
 </body>
 </html>
