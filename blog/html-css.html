@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dylan Toomey | Blog</title>
+    <meta charset="UTF-8">
+    <link href="..\styles\blog-posts.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.gstatic.com"> <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital@1&display=swap" rel="stylesheet"> 
+  </head>
+
+<body>
+    <div id="header-color">
+      <header id="header-text">
+        <ul class="header-layout"> 
+          <li id="main-header">Dylan Toomey Blog</li>  
+        </ul>
+    </header>
+    </div>
+
+    <nav>
+        <ul class="navigation">
+        <li class="categories"><a class="nav-link" href="https://dylan-toomey.github.io">Home</a></li>
+          <li class="categories"><a class="nav-link" href="">Blog Posts</a></li>
+          <li class="categories"><a class="nav-link" href="">About Me</a></li>
+        </ul>
+      </nav>
+
+    <main>
+        <h1>What is the difference between Margin, Border, and Padding?</h1>
+        <div class="content-div">
+            <h2>Introduction</h2>
+            <p class="paragraph">Before we get started on the differences between margin, padding & borders we first need to understand <span class="code">inline-block</span> & <span class="code">inline</span> elements/tags.</p>
+            <p class="paragraph">An inline element is esentially something that <span class="bold">natively does not</span> take up the full width of a page. See examples below of some.</p>
+            <p class="breakline">This means any padding, borders or margins are directly aplied to just that element not the whole line. This causes any Margins, Borders, & Padding to behave differently.</p>
+            <p class="paragraph">An inline-block element is esentially something that <span class="bold">natively does </span> take up the full width of a page. See examples below of some.</p>
+            <p class="breakline">This means any padding, borders or margins are directly aplied to the entire space that the <span class="code">inline-block</span> element is on.</p>
+            <p class="paragraph">The below lists is also an example of how natively inline-block elements can be changed to inline elements (<span class="code">display: inline-block;</span>).</p>
+        </div>
+
+        <div class="content-div-split2">
+            <div class="left">
+                <h3>In-line Elements</h3>
+                <ul class="list">
+                    <li class="code">span</li>
+                    <li class="code">script</li>
+                    <li class="code">var</li>
+                    <li class="code">strong</li>
+                    <li class="code">button</li>
+                    <li class="code">input</li>
+                </ul>
+            </div>
+
+            <div class="right">
+            <h3>In-line Block Elements</h3>
+                <ul class="list">
+                    <li class="code">p</li>
+                    <li class="code">header tags</li>
+                    <li class="code">list tags</li>
+                    <li class="code">div</li>
+                    <li class="code">table</li>
+                    <li class="code">form</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="content-div">
+            <h2>Padding <span class="use">USE: To create space between the edge of an element and its content</span></h2>
+            <p class="paragraph">Padding is amount of space between the edge of the container and the content. When it comes to inline and 
+                inline-block elements there is one difference to how this are appliead. An <span class="code">Inline</span> element can only have padding added to the sides of it. This
+            is because it's an inline element. An <span class="code">Inline-Block</span> element can have padding in all four directions.</p>
+            <p class="paragraph">This can increase the size of an element.</p>
+            <p class="paragraph">Examples:</p>
+            <div class="image-split-2">
+                <div class="left-image">
+                    <h3>Padding directly on the red box Div</h3>
+                    <img class="pad-image" src="..\images\original-box.png">
+                    <img class="pad-image" src="..\images\padded-red.png">
+                    <p class="note">It applies padding internally to the contents of the Red Div shifting them furhter inside whilst also increasing the overall size</p>
+                    <p class="note">Applying it to an <span class="code">Inline-block</span> element will increase the size of the entire container even with <span class="code">max-width</span> set.</p>
+                </div>
+                <div class="right-image">
+                    <h3>Padding directly on the red box Text</h3>
+                    <img class="pad-image" src="..\images\original-box.png">
+                    <img class="pad-image" src="..\images\padding-text.png">
+                    <p class="note">This creates space outside the text. Since its a small box it essentially looks like the border for the text is now the border for the Div.</p>
+                    <p class="note">The "Red Box" text is also overflowing inside the div now, which is why its on seperate lines</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-div">
+            <h2>Margin <span class="use">USE: To create space between the edge of one element and another element</span></h2>
+            <p class="paragraph">The margin of an element is the relationship that element has with another in the document. Margins do not directly influence the size of an element.</p>
+            <p class="paragraph"><span class= "bold">Note:</span> Margins do not combine with other elements the larger of the two margins will* take precendece. For example on peice of content has a 10px margin and another is 20px margin, the
+            total distance between the two elements will be 20px not 30px.</p>
+            <p class="paragraph">This doesn't increase the size of an element rather the how close other elements can be to it.</p>
+            <p class="paragraph">Examples:</p>
+            <div class="image-split-2">
+                <div class="left-image">
+                    <h3>Adding 15px Margin to the Red Div</h3>
+                    <img class="pad-image" src="..\images\original-margin.png">
+                    <img class="pad-image" src="..\images\margin-15px.png">
+                    <p class="note">This creates a 15px social distancing rule from any other elements and the sides of the page</p>
+                </div>
+                <div class="right-image">
+                    <h3>Margin on <span class="code">Inline</span> element</h3>
+                    <img class="pad-image wide-image" src="..\images\margin-inline-element.png">
+                    <p class="note">This shifts the text outisde of the Div but only effects the first line as it wraps</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-div">
+            <h2>Borders <span class="use">USE: To create styling</span></h2>
+            <p class="paragraph">A border is a way of styling an element. The <span class="code">border</span> and its children have hundreds of ways to style a border. For example all the
+            blue-ish divs of content on this page have a border on them. They are transparent but allow the Div to have some nice curves.</p>
+            <p class="paragraph">Borders do count towards the total size of an element and will add with any borders in direct contact if no margins. Borders live on the edge,
+                borders apply on the outside of an element not the inside.</p>
+            <p class="paragraph">Examples:</p>
+            <div class="image-split-2">
+                <div class="left-image">
+                    <h3>How touching borders add</h3>
+                    <img class="pad-image" src="..\images\padded-red.png">
+                    <p class="note">The thickness of the red-box border adds on top of the blue-box</p>
+                </div>
+                <div class="right-image">
+                    <h3>Borders increase size</h3>
+                    <img class="pad-image" src="..\images\border-size.png">
+                    <p class="note">The thickness of a border adds horizontally/vertically and increases the size of the overall element.</p>
+                    <p class="note">(Both the Red & Blue box are the same size)</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-div">
+            <h2>What's the difference</h2>
+            <h3 class="subtitle">First what is similar</h3>
+            <p class="paragraph">Borders, margins and padding in some way increase the space an element takes up on the page.</p>
+            <p class="breakline">That's all that is similar really, each have there own unique properties and can't be used instead of another.</p>
+
+            <h3 class="subtitle">What's different</h3>
+            <p class="paragraph">The most different one out of the three is borders. Borders out of the three are the cosemtic shapers of elements. They can shift an element and 
+                increase it size. But its main purpose is to encase content in some styling effect.
+            </p>
+            <p class="paragraph">Padding and Margins both esentially increase the free realestate for the contents/element to position between other elements. The way I look at it is that 
+                padding effects children and the margin affects its and other elements position.</p>
+        </div>
+        
+    </main>
+
+</body>
+
+</html>
