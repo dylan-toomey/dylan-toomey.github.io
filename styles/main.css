@@ -40,6 +40,7 @@ nav {
 
 #main-header {
     text-align: center;
+    display: inline-block;
     font-size: 50px;
     width: 100%;
     font-family: 'Permanent Marker', cursive;
@@ -48,6 +49,12 @@ nav {
     text-shadow: 2px 2px black;
 }
 
+
+@media screen and (max-width: 476px) {
+    #main-header {
+      font-size: 30px;
+    }
+  }
 
 
 #home-header {
@@ -204,6 +211,7 @@ main {
     vertical-align: middle;
 }
 
+
 .circle {
     display: inline-block;
     padding: 19px;
@@ -217,6 +225,15 @@ main {
     border-radius: 25px;
     vertical-align: top;
 }
+
+
+@media screen and (max-width: 476px) {
+    .circle {
+        width: 150px;
+        height: 300px;
+    }
+  }
+
 
 .blog-sample {
     font-size: 17px;
@@ -297,7 +314,6 @@ main {
 
 #profile-image {
     max-width: 150px;
-    margin: 15px;
     margin-top: 5px;
     margin-bottom: 5px;
     width: auto;
@@ -307,6 +323,22 @@ main {
     border: 0px solid transparent;
     border-radius: 25px;    
 }
+
+@media screen and (max-width: 476px) {
+    #profile-image {
+        margin-left: 0px;
+        margin-right: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+  }
+
+  @media screen and (max-width: 476px) {
+    .name {
+        font-size: 22px;
+    }
+  }
+
 
 .content {
         margin: 10px;

@@ -56,6 +56,11 @@ nav {
     text-shadow: 2px 2px black;
 }
 
+@media screen and (max-width: 476px) {
+    #main-header {
+      font-size: 30px;
+    }
+  }
 
 
 #home-header {
@@ -133,6 +138,13 @@ nav {
     text-align: center; 
 }
 
+@media screen and (max-width: 476px) {
+    .container {
+      width: 100%;
+    }
+  }
+
+
 .circle-content {
     padding: 10px;
     display: inline-block;
@@ -142,11 +154,11 @@ nav {
 .circle {
     display: inline-block;
     padding: 19px;
-    width: 250px;
-    height: 250px;
     margin: 10px;
     margin-left: 0px;
     margin-right: 0px;
+    width: 250px;
+    height: 250px;
     background-color: rgb(84 96 178);
     background: 0px solid transparent;
     border-radius: 100%;
@@ -156,6 +168,33 @@ nav {
 .blog-sample {
     font-size: 17px;
 }
+
+@media screen and (max-width: 476px) {
+    .blog-sample {
+      display: none;
+    }
+  }
+
+@media screen and (max-width: 476px) {
+  .circle { 
+    width: 150px;
+    height: 150px;
+    border-radius: 60%;
+    }
+}
+
+
+@media screen and (max-width: 476px) {
+    .blog-title {  
+        margin: 5px;
+        font-size: 15px;
+        justify-content: center;
+        vertical-align: middle;
+        display: inline-flex;
+    }
+}
+
+
 
 .date {
     font-style: italic;
