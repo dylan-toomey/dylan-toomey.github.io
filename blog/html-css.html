@@ -34,12 +34,12 @@
         <h1>What is the difference between Margin, Border, and Padding?</h1>
         <div class="content-div">
             <h2>Introduction</h2>
-            <p class="paragraph">Before we get started on the differences between margin, padding & borders we first need to understand <span class="code">inline-block</span> & <span class="code">inline</span> elements/tags.</p>
+            <p class="paragraph">Before we get started on the differences between margin, padding & borders we first need to understand <span class="code">block</span> & <span class="code">inline</span> elements/tags.</p>
             <p class="paragraph">An inline element is esentially something that <span class="bold">natively does not</span> take up the full width of a page. See examples below of some.</p>
             <p class="breakline">This means any padding, borders or margins are directly aplied to just that element not the whole line. This causes any Margins, Borders, & Padding to behave differently.</p>
-            <p class="paragraph">An inline-block element is esentially something that <span class="bold">natively does </span> take up the full width of a page. See examples below of some.</p>
-            <p class="breakline">This means any padding, borders or margins are directly aplied to the entire space that the <span class="code">inline-block</span> element is on.</p>
-            <p class="paragraph">The below lists is also an example of how natively inline-block elements can be changed to inline elements (<span class="code">display: inline-block;</span>).</p>
+            <p class="paragraph">An block element is esentially something that <span class="bold">natively does </span> take up the full width of a page. See examples below of some.</p>
+            <p class="breakline">This means any padding, borders or margins are directly aplied to the entire space that the <span class="code">block</span> element is on.</p>
+            <p class="paragraph">The below lists is also an example of how natively block elements can be changed to inline elements (<span class="code">display: inline-block;</span>).</p>
         </div>
 
         <div class="content-div-split2">
@@ -56,7 +56,7 @@
             </div>
 
             <div class="right">
-            <h3 class="centered">In-line Block Elements</h3>
+            <h3 class="centered">Block Elements</h3>
                 <ul class="list">
                     <li class="code">p</li>
                     <li class="code">header tags</li>
@@ -72,7 +72,7 @@
             <h2>Padding <span class="use">USE: To create space between the edge of an element and its content</span></h2>
             <p class="paragraph">Padding is amount of space between the edge of the container and the content. When it comes to inline and 
                 inline-block elements there is one difference to how this are appliead. An <span class="code">Inline</span> element can only have padding added to the sides of it. This
-            is because it's an inline element. An <span class="code">Inline-Block</span> element can have padding in all four directions.</p>
+            is because it's an inline element. An <span class="code">Block</span> element can have padding in all four directions.</p>
             <p class="paragraph">This can increase the size of an element.</p>
             <p class="paragraph">Examples:</p>
             <div class="image-split-2">
@@ -81,7 +81,7 @@
                     <img class="pad-image" src="..\images\originalbox.png">
                     <img class="pad-image" src="..\images\paddedred.png">
                     <p class="note">It applies padding internally to the contents of the Red Div shifting them furhter inside whilst also increasing the overall size</p>
-                    <p class="note">Applying it to an <span class="code">Inline-block</span> element will increase the size of the entire container even with <span class="code">max-width</span> set.</p>
+                    <p class="note">Applying it to an <span class="code">block</span> element will increase the size of the entire container even with <span class="code">max-width</span> set.</p>
                 </div>
                 <div class="right-image">
                     <h3>Padding directly on the red box Text</h3>
