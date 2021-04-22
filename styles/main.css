@@ -68,6 +68,7 @@ main {
     margin-top: 0px;
     margin-bottom: 0px;
     margin-left: 15px;
+    font-family: 'Permanent Marker', cursive;
 }
 
 .hp-icons {
@@ -458,4 +459,29 @@ h3 {
 .goal {
     font-weight: bold;
     text-decoration: underline;
+}
+
+.personality {
+    max-width: 220px;
+    height: auto;
+}
+
+.columns-internal {
+    text-align: center;
+    display: inline-flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.column-internal {
+    flex: 1 1 200px;
+    width: auto;
+    min-width: 0;
+    margin: 5px;
+}
+
+
+.hp-post-title {
+    font-size: 18px;
+    margin: 5px;
 }
