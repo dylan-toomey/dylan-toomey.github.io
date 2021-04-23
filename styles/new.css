@@ -1,0 +1,450 @@
+body
+{
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #f4fffe;
+}
+
+main 
+{
+    margin: 5px;
+    max-width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+:root 
+{
+    --background: rgb(255, 255, 255);
+}
+
+/* Navigation Styling Start */
+
+header
+{
+    background: var(--background);
+    text-align: center;
+    position: sticky;
+    width: 100%;
+    box-shadow: 1px 1px #c5c5c5;
+
+
+}
+
+nav 
+{
+    text-align: left;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: var(--background);
+    border: 0px transparent;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 100%;
+    transform: scale(1,0);
+    transform-origin: top;
+    transition: transform 400ms ease-in-out;
+}
+
+.nav-toggle
+{
+    display: none;
+}
+
+.nav-toggle-label
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 1em;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+
+.home-icon-open
+{
+    margin-top: 2px;
+    width: auto;
+    height: 30px;
+}
+
+
+
+/* Comment out hacky burger logo
+.nav-toggle-label span,
+.nav-toggle-label span::before,
+.nav-toggle-label span::after
+{
+    display: block;
+    background: white;
+    height: 2px;
+    width: 2em;
+    border-radius: 2px;
+    position: relative;
+}
+
+
+.nav-toggle-label span::before,
+.nav-toggle-label span::after
+{
+    content: '';
+    position: absolute;
+}
+
+.nav-toggle-label span::before
+{
+    bottom: 7px;
+}
+
+
+.nav-toggle-label span::after
+{
+    top: 7px;
+}
+
+ Comment out hacky burger logo */
+
+nav ul 
+{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li
+{   
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 1em;
+}
+
+
+nav a
+{
+    color: black;
+    text-decoration: none;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    opacity: 0;
+    transition: opacity 250ms ease-in-out 250ms;
+}
+
+nav a:hover {
+    color: purple;
+}
+
+header h1 
+{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 15px;
+}
+
+
+.nav-toggle:checked ~ nav 
+{
+    transform: scale(1,1);
+}
+
+.nav-toggle:checked ~ nav a
+{
+    opacity: 1;
+    transition: opacity 150ms ease-in-out;
+}
+
+
+@media screen and (min-width: 700px)
+{
+    .nav-toggle-label
+    {
+        display: none;
+    }
+
+    header 
+    {
+        display: grid;
+        grid-template-columns: 1fr auto minmax(580px, 1fr) 1fr;
+    }
+
+    .logo 
+    {
+        grid-column: 2 / span 1;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    
+    nav
+    {
+        all: unset;
+        grid-column: 3 / 4;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    
+    nav a 
+    {
+        opacity: 1;
+        position: relative;
+    }
+
+    nav a::before
+    {
+        content: '';
+        display: block;
+        height: 5px;
+        background: black;
+        position: absolute;
+        bottom: -.40em;
+        left: 0;
+        right: 0;
+        transform: scale(0, 1);
+        transition: transform ease-in-out 255ms;
+        transform-origin: right;
+    }
+
+    nav a:hover::before
+    {
+        transform: scale(1,1);
+        transform-origin: left;
+    }
+
+    nav ul 
+    {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    nav li 
+    {
+        margin-left: 2em;
+        margin-bottom: 0;
+        align-items: center;
+    }
+}
+
+/* Navigation Styling End */
+
+/* Home Welcome Banner Start */
+
+
+
+.hp-container 
+{
+    background-image: linear-gradient( 120deg, #292423 0%, #8250a2 50%, white 50%, white 51%, #9a4bcc 51%, #2c1572 100%);
+    height: 300px;
+    width: 100%;
+    max-width: 1500px;
+    display: flex;
+    flex-wrap: nowrap; 
+    justify-content: left;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+.hp-left
+{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    height: 100%;
+    padding-left: 15px;
+    justify-content: center;
+}
+
+.hp-left > * 
+{
+    color: #f87f73;
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Permanent Marker', cursive;
+    font-weight: lighter;
+}
+
+.welcome-title {
+    font-size: 35px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.hp-right 
+{
+    margin-left: auto;
+    width: 40%;
+    height: 100%;
+    text-align: center;
+    overflow: hidden;
+}
+
+#profile-image 
+{
+    margin-top: 15px;
+    max-width: 150px;
+    height: auto;
+    border: 0px solid transparent;
+    border-radius: 80%;
+}
+
+.icon 
+{
+    max-width: 50px;
+    height: auto;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+#hp-name
+{
+    margin-top: 0px;
+    margin-bottom: 5px;
+    font-family: 'Permanent Marker', cursive;
+}
+
+
+
+@media screen and (max-width: 700px)
+{
+    .hp-container 
+    {
+        background-image: linear-gradient( 160deg, #292423 0%, #8250a2 48%, white 48%, white 49%, #9a4bcc 49%, #2c1572 100%);
+        height: auto;
+        width: 100%;
+        max-width: 1500px; 
+        display: block;
+        justify-content: left;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+
+    .hp-left
+    {
+        display: block;
+        flex-direction: column;
+        width: auto;
+        padding-left: 0px;
+        height: 100%;
+        justify-content: center;
+        margin-bottom: 60px;
+    }
+
+    .hp-left > * 
+    {
+        color: #f87f73;
+        text-align: center;
+        font-size: 25px;
+        font-family: 'Permanent Marker', cursive;
+        font-weight: lighter;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .welcome-title {
+        font-size: 35px;
+        font-weight: bold;
+        font-style: italic;
+    }
+
+    .hp-right 
+    {
+        margin-left: auto;
+        width: auto;
+        height: 100%;
+        text-align: center;
+        padding: 15px;
+    }
+
+    #profile-image 
+    {
+        max-width: 150px;
+        height: auto;
+        border: 0px solid transparent;
+        border-radius: 80%;
+    }
+
+    .icon 
+    {
+        max-width: 50px;
+        height: auto;
+    }
+
+    #hp-name
+    {
+        margin-top: 0px;
+        margin-bottom: 5px;
+        font-family: 'Permanent Marker', cursive;
+    }
+}
+
+
+/* Home Welcome Banner End */
+
+
+/* Blog Posts Start */
+
+.div-title
+{
+    text-align: center;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.card-link {
+    color: inherit; 
+    text-decoration: inherit;
+  }
+
+
+.hp-posts {
+    margin-top: 20px;
+}
+
+
+.columns {
+    text-align: center;
+    display: inline-flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.column {
+    flex: 1 1 200px;
+    width: auto;
+    min-width: 0;
+    border: 5px solid rgb(146, 146, 146);
+    border-radius: 25px;
+    margin: 5px;
+}
+
+.column:hover {
+    background-image: linear-gradient( 160deg, #292423 0%, #8250a2 48%,  #9a4bcc 48%, #2c1572 100%);
+    color: white;
+    transition: all .3s ease-in;
+    transform-origin: top;
+}
+
+
+}
+
+.hp-post-title {
+    font-size: 18px;
+    margin: 5px;
+}
+
+.post-image {
+    margin: 5px;
+}
+
+
+@media screen and (max-width: 1105px) and (min-width: 488px){
+    #big-col{
+        flex: 1 1 45%;
+    }
+}
+
+/* Blog Posts end */
