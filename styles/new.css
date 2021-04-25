@@ -562,7 +562,9 @@ header h1
     height: auto;
     margin-left: 1%;
     margin-right: 1%;
-    flex: 1 1 45%;
+    padding-left: 5px;
+    padding-right: 5px;
+    flex: 1 1 40%;
     border: 5px solid grey;
     border-radius: 25px;
     transition: border 500ms ease-in; 
@@ -602,7 +604,6 @@ header h1
     .support-images
     {
     width: 100%;
-    flex: 1 1 100%;
     }
 
     .mobile-title
@@ -619,3 +620,232 @@ header h1
     }
     
 }
+
+
+/* Blog Posts check boxes */
+
+.blog-post-checks 
+{
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    margin: auto;
+}
+
+.check-icons
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.post-toggle-label
+{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.css-check, .html-check, .personal-check
+{
+    display: none;
+    text-align: center;
+}
+
+
+.toggle-css
+{
+    display: none;
+}
+
+.css-check:checked ~ div label div .static-css
+{
+    display: none;
+} 
+
+.css-check:checked ~ div label div .toggle-css
+{
+    display: block;
+    text-align: center;
+} 
+
+
+.toggle-html
+{
+    display: none;
+}
+
+.html-check:checked ~ div label div .static-html
+{
+    display: none;
+} 
+
+.html-check:checked ~ div label div .toggle-html
+{
+    display: block;
+} 
+
+
+.toggle-personal
+{
+    display: none;
+}
+
+.personal-check:checked ~ div label div .static-personal
+{
+    display: none;
+} 
+
+.personal-check:checked ~ div label div .toggle-personal
+{
+    display: block;
+} 
+
+label div img
+{
+    height: 150px;
+    width: auto;
+}
+
+h3
+{
+    text-align: center;
+}
+
+
+.icon-container
+{
+    margin: 15px;
+    text-align: center;
+}
+
+
+.blog-card, .blog-card-toggle 
+{
+    text-align: left;
+    margin: auto;
+    margin-bottom: 10px;
+    vertical-align: top;
+    height: 200px;
+    max-width: 48%;
+    flex: 1 1 50%;
+    border: 5px solid grey;
+    border-radius: 25px;
+    transition: border 500ms ease-in; 
+    position: relative;
+}
+
+.blog-card:hover
+{
+    border-color: purple;
+    transition: border 500ms ease-out; 
+    text-decoration: underline;
+}
+
+.blog-tag
+{
+    margin: 15px;
+    padding: 8px;
+    position:absolute;
+    bottom:0;
+    border-radius: 25px;
+    border: 0px solid transparent;
+}
+
+#css
+{
+    background-color: rgb(105, 173, 209);
+}
+
+#personal
+{
+    background-color: thistle;
+}
+
+#html
+{
+    background-color: orange;
+}
+
+h1
+{
+    text-align: center;
+}
+
+
+.blog-section-all, .blog-section-html, .blog-section-css, .blog-section-personal
+{
+    height: auto;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.toggle-title
+{
+    display: none;
+}
+
+
+.blog-section-html,
+.blog-section-css,
+.blog-section-personal
+{
+    display: none;
+}
+
+
+.html-check:checked ~ .blog-section-all,
+.personal-check:checked ~ .blog-section-all,
+.css-check:checked ~ .blog-section-all
+{
+    display: none;
+}
+
+.html-check:checked ~ .blog-section-html
+{
+    display: flex;
+}
+
+.personal-check:checked ~ .blog-section-personal
+{
+    display: flex;
+}
+
+.personal-check:checked ~ #personal-title
+{
+    display: block;
+}
+
+.html-check:checked ~ #html-title
+{
+    display: block;
+}
+
+.css-check:checked ~ #css-title
+{
+    display: block;
+}
+
+.css-check:checked ~ .blog-section-css
+{
+    display: flex;
+}
+
+
+@media screen and (max-width: 700px) {
+
+    
+    .blog-card, .blog-card-toggle 
+    {
+        max-width: 90%;
+        flex: 1 1 100%;
+        height: auto;
+        padding-bottom: 35px;
+    }
+    
+}
+
+/* Blog Check box section finished */

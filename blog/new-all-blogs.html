@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="..\styles\new.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital@1&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com"> <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1 class="logo">Dylan Toomey</h1>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Blog Posts</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">About Me</a></li>
+            </ul>
+        </nav>
+        <label for="nav-toggle" class="nav-toggle-label">
+            <span><img id="home-icon-open" class="home-icon-open" src="../images/menu.png" alt="Menu"></span>
+        </label> 
+    </header>
+    <main>
+
+        <h1 class="all-blogs">All Blog Posts</h1>
+        <input type="checkbox" id="css-check" class="css-check">
+        <input type="checkbox" id="html-check" class="html-check">
+        <input type="checkbox" id="personal-check" class="personal-check">
+        <div class="blog-post-checks">
+            <div class="check-icons">
+                <label for="css-check" class="post-toggle-label">
+                    <div class="icon-container">
+                        <img id="css-toggle" class="css-toggle static-css" src="../images/css-static.png" alt="Menu"><img id="css-toggle" class="css-toggle toggle-css" src="../images/css-toggle.png" alt="Menu">
+                        <h3>CSS</h3>
+                    </div>
+                </label> 
+                <label for="html-check" class="post-toggle-label">
+                    <div class="icon-container">
+                        <img id="html-toggle" class="html-toggle static-html" src="../images/html-static.png" alt="Menu"><img id="html-toggle" class="html-toggle toggle-html" src="../images/html-toggle.png" alt="Menu">
+                        <h3>HTML</h3>
+                    </div>
+                </label> 
+                <label for="personal-check" class="post-toggle-label">
+                    <div class="icon-container">
+                        <img id="personal-toggle" class="personal-toggle static-personal" src="../images/personal-static.png" alt="Menu"><img id="personal-toggle" class="personal-toggle toggle-personal" src="../images/personal-toggle.png" alt="Menu">
+                        <h3>Personal</h3>
+                    </div>
+                </label>                 
+            </div>
+        </div>
+
+        <div class="blog-section-all">
+            <div class="blog-card">
+                <h1>What is the difference between Margins, Padding & Borders</h1>
+                <span class="blog-tag" id ="css">CSS</span>
+            </div>
+            <div class="blog-card">
+                <h1>Learning Plan</h1>
+                <span class="blog-tag" id ="personal">Personal</span>
+            </div>
+            <div class="blog-card">
+                <h1>Identity & Values</h1>
+                <span class="blog-tag" id ="personal">Personal</span>
+            </div>
+        </div>
+
+        <h1 class="toggle-title" id="html-title">HTML Blog Posts</h1>
+        <div class="blog-section-html">
+            <div class="blog-card-toggle">
+                <h1>Useing the correct HTML class codes</h1>
+            </div>
+        </div>
+
+        <h1 class="toggle-title" id="css-title">CSS Blog Posts</h1>
+        <div class="blog-section-css">
+            <div class="blog-card-toggle">
+                <h1>What is the difference between Margins, Padding & Borders</h1>
+                <span class="blog-tag" id ="css">CSS</span>
+            </div>
+        </div>
+
+        <h1 class="toggle-title" id="personal-title">Personal Blog Posts</h1>
+        <div class="blog-section-personal">
+            <div class="blog-card-toggle">
+                <h1>Learning Plan</h1>
+                <span class="blog-tag" id ="personal">Personal</span>
+            </div>
+            <div class="blog-card-toggle">
+                <h1>Identity & Values</h1>
+                <span class="blog-tag" id ="personal">Personal</span>
+            </div>
+        </div>
+
+    </main>
+</body>
+<script> </script>
+</html>
+
