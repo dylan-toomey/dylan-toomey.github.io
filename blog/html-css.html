@@ -1,51 +1,42 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Dylan Toomey | Blog</title>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
-    <link href="..\styles\main.css" rel="stylesheet" type="text/css">
-    <link rel="preconnect" href="https://fonts.gstatic.com"> <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="..\styles\new.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital@1&display=swap" rel="stylesheet"> 
-  </head>
-
-  <header>
-    <div class="HP-header">
-        <div class="hp-container">
-          <h1 id="HP-title">Dylan Toomey Blog</h1>
-          <h2 class="quote">The beginning is the most important part of the work. <span class="quote-ref">Plato</span></h2>
-          <div class="flex-break">
-            <a class="card-link" target="_blank" href="https://github.com/dylan-toomey"><img class="hp-icons" src="../images/Octocat.png" alt="github"></a>
-            <a class="card-link" target="_blank" href="https://www.linkedin.com/in/dylan-toomey-a4a3b3ab/"><img class="hp-icons" src="../images/linkedin.png" alt="linkid"></a>
-          </div>
-      </div>
-    </div>
- </header>
-
- <nav>
-    <div class="float-nav">
-      <a class="card-link" href="https://dylan-toomey.github.io"><span class="nav-link">Home</span></a>
-      <a class="card-link" href="https://dylan-toomey.github.io/blog/all-blogs.html"><span class="nav-link">Blog Posts</span></a>
-      <a class="card-link" href=""><span class="nav-link">About Me</span></a>
-    </div>
-   </nav>
-    
-     <body>
+    <link rel="preconnect" href="https://fonts.gstatic.com"> <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <title>CSS Spacing | Dylan Toomey</title>
+</head>
+<body>
+    <header>
+        <h1 class="logo">Dylan Toomey</h1>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <nav>
+            <ul>
+                <li><a href="https://dylan-toomey.github.io/">Home</a></li>
+                <li><a href="https://dylan-toomey.github.io/blog/all-blogs.html">Blog Posts</a></li>
+            </ul>
+        </nav>
+        <label for="nav-toggle" class="nav-toggle-label">
+            <span><img id="home-icon-open" class="home-icon-open" src="../images/menu.png" alt="Menu"></span>
+        </label> 
+    </header>
     <main>
+
         <h1>What is the difference between Margin, Border, and Padding?</h1>
         <div class="content-div">
-            <h2>Introduction</h2>
+            <h2 class="content-title">Introduction</h2>
             <p class="paragraph">Before we get started on the differences between margin, padding & borders we first need to understand <span class="code">block</span> & <span class="code">inline</span> elements/tags.</p>
-            <p class="paragraph">An inline element is esentially something that <span class="bold">natively does not</span> take up the full width of a page. See examples below of some.</p>
-            <p class="breakline">This means any padding, borders or margins are directly aplied to just that element not the whole line. This causes any Margins, Borders, & Padding to behave differently.</p>
-            <p class="paragraph">An block element is esentially something that <span class="bold">natively does </span> take up the full width of a page. See examples below of some.</p>
-            <p class="breakline">This means any padding, borders or margins are directly aplied to the entire space that the <span class="code">block</span> element is on.</p>
+            <p class="paragraph">An inline element is esentially something that <span class="bold">natively does not</span> take up the full width of a page. See examples below of some.<br>This means any padding, borders or margins are directly aplied to just that element not the whole line. This causes any Margins, Borders, & Padding to behave differently.</p>
+            <p class="paragraph">A block element is esentially something that <span class="bold">natively does </span> take up the full width of a page. See examples below of some.<br>This means any padding, borders or margins are directly aplied to the entire space that the <span class="code">block</span> element is on.</p>
             <p class="paragraph">The below lists is also an example of how natively block elements can be changed to inline elements (<span class="code">display: inline-block;</span>).</p>
         </div>
 
-        <div class="content-div-split2">
-            <div class="left">
-                <h3 class="centered">In-line Elements</h3>
-                <ul class="list">
+        <div class="content-div">
+                <p class="subtitle">In-line Elements</p>
+                <ul class="list-blog">
                     <li class="code">span</li>
                     <li class="code">script</li>
                     <li class="code">var</li>
@@ -53,11 +44,9 @@
                     <li class="code">button</li>
                     <li class="code">input</li>
                 </ul>
-            </div>
 
-            <div class="right">
-            <h3 class="centered">Block Elements</h3>
-                <ul class="list">
+            <p class="subtitle">Block Elements</p>
+                <ul class="list-blog">
                     <li class="code">p</li>
                     <li class="code">header tags</li>
                     <li class="code">list tags</li>
@@ -65,11 +54,11 @@
                     <li class="code">table</li>
                     <li class="code">form</li>
                 </ul>
-            </div>
+
         </div>
 
         <div class="content-div">
-            <h2>Padding <span class="use">USE: To create space between the edge of an element and its content</span></h2>
+            <h2 class="content-title">Padding <span class="use">USE: To create space between the edge of an element and its content</span></h2>
             <p class="paragraph">Padding is amount of space between the edge of the container and the content. When it comes to inline and 
                 inline-block elements there is one difference to how this are appliead. An <span class="code">Inline</span> element can only have padding added to the sides of it. This
             is because it's an inline element. An <span class="code">Block</span> element can have padding in all four directions.</p>
@@ -94,7 +83,7 @@
         </div>
 
         <div class="content-div">
-            <h2>Margin <span class="use">USE: To create space between the edge of one element and another element</span></h2>
+            <h2 class="content-title">Margin <span class="use">USE: To create space between the edge of one element and another element</span></h2>
             <p class="paragraph">The margin of an element is the relationship that element has with another in the document. Margins do not directly influence the size of an element.</p>
             <p class="paragraph"><span class= "bold">Note:</span> Margins do not combine with other elements the larger of the two margins will* take precendece. For example on peice of content has a 10px margin and another is 20px margin, the total distance between the two elements will be 20px not 30px.</p>
             <p class="paragraph">This doesn't increase the size of an element rather the how close other elements can be to it.</p>
@@ -115,7 +104,7 @@
         </div>
 
         <div class="content-div">
-            <h2>Borders <span class="use">USE: To create styling</span></h2>
+            <h2 class="content-title">Borders <span class="use">USE: To create styling</span></h2>
             <p class="paragraph">A border is a way of styling an element. The <span class="code">border</span> and its children have hundreds of ways to style a border. For example all the blue-ish divs of content on this page have a border on them. They are transparent but allow the Div to have some nice curves.</p>
             <p class="paragraph">Borders do count towards the total size of an element and will add with any borders in direct contact if no margins. Borders live on the edge, borders apply on the outside of an element not the inside.</p>
             <p class="paragraph">Examples:</p>
@@ -135,18 +124,20 @@
         </div>
 
         <div class="content-div">
-            <h2>What's the difference</h2>
-            <h3 class="subtitle">First what is similar</h3>
+            <h2 class="content-title">What's the difference</h2>
+            <p class="subtitle">First what is similar</p>
             <p class="paragraph">Borders, margins and padding in some way increase the space an element takes up on the page.</p>
             <p class="breakline">That's all that is similar really, each have there own unique properties and can't be used instead of another.</p>
-            <h3 class="subtitle">What's different</h3>
+            <p class="subtitle">What's different</p>
             <p class="paragraph">The most different one out of the three is borders. Borders out of the three are the cosemtic shapers of elements. They can shift an element and increase it size. But its main purpose is to encase content in some styling effect.
             </p>
             <p class="paragraph">Padding and Margins both esentially increase the free realestate for the contents/element to position between other elements. The way I look at it is that padding effects children and the margin affects its and other elements position.</p>
         </div>
-        
+
+
     </main>
 
+</main>
 </body>
-
+<script> </script>
 </html>

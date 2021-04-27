@@ -79,42 +79,6 @@ nav
     height: 30px;
 }
 
-
-
-/* Comment out hacky burger logo
-.nav-toggle-label span,
-.nav-toggle-label span::before,
-.nav-toggle-label span::after
-{
-    display: block;
-    background: white;
-    height: 2px;
-    width: 2em;
-    border-radius: 2px;
-    position: relative;
-}
-
-
-.nav-toggle-label span::before,
-.nav-toggle-label span::after
-{
-    content: '';
-    position: absolute;
-}
-
-.nav-toggle-label span::before
-{
-    bottom: 7px;
-}
-
-
-.nav-toggle-label span::after
-{
-    top: 7px;
-}
-
- Comment out hacky burger logo */
-
 nav ul 
 {
     margin: 0;
@@ -238,19 +202,11 @@ header h1
 
 /* Home Welcome Banner Start */
 
-
-
 .hp-container 
 {
     background-image: linear-gradient( 120deg, #292423 0%, #8250a2 50%, white 50%, white 51%, #9a4bcc 51%, #2c1572 100%);
     height: 300px;
-    width: 100%;
-    max-width: 1500px;
     display: flex;
-    flex-wrap: nowrap; 
-    justify-content: left;
-    margin-right: auto;
-    margin-left: auto;
     margin-bottom: 50px;
 }
 
@@ -260,7 +216,6 @@ header h1
     display: flex;
     flex-direction: column;
     width: 40%;
-    height: 100%;
     padding-left: 15px;
     justify-content: center;
 }
@@ -271,12 +226,10 @@ header h1
     text-align: center;
     font-size: 25px;
     font-family: 'Permanent Marker', cursive;
-    font-weight: lighter;
 }
 
 .welcome-title {
     font-size: 35px;
-    font-weight: bold;
     font-style: italic;
 }
 
@@ -284,17 +237,13 @@ header h1
 {
     margin-left: auto;
     width: 40%;
-    height: 100%;
     text-align: center;
-    overflow: hidden;
 }
 
 #profile-image 
 {
     margin-top: 15px;
     max-width: 150px;
-    height: auto;
-    border: 0px solid transparent;
     border-radius: 80%;
 }
 
@@ -322,70 +271,19 @@ header h1
         background-image: linear-gradient( 160deg, #292423 0%, #8250a2 48%, white 48%, white 49%, #9a4bcc 49%, #2c1572 100%);
         height: auto;
         width: 100%;
-        max-width: 1500px; 
         display: block;
-        justify-content: left;
-        margin-right: auto;
-        margin-left: auto;
     }
-
 
     .hp-left
     {
         display: block;
-        flex-direction: column;
         width: auto;
         padding-left: 0px;
-        height: 100%;
-        justify-content: center;
-        margin-bottom: 60px;
-    }
-
-    .hp-left > * 
-    {
-        color: #f87f73;
-        text-align: center;
-        font-size: 25px;
-        font-family: 'Permanent Marker', cursive;
-        font-weight: lighter;
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-
-    .welcome-title {
-        font-size: 35px;
-        font-weight: bold;
-        font-style: italic;
     }
 
     .hp-right 
     {
-        margin-left: auto;
         width: auto;
-        height: 100%;
-        text-align: center;
-        padding: 15px;
-    }
-
-    #profile-image 
-    {
-        max-width: 150px;
-        height: auto;
-        border: 0px solid transparent;
-        border-radius: 80%;
-    }
-
-    .icon 
-    {
-        max-width: 50px;
-        height: auto;
-    }
-
-    #hp-name
-    {
-        margin-top: 0px;
-        margin-bottom: 5px;
-        font-family: 'Permanent Marker', cursive;
     }
 }
 
@@ -436,11 +334,9 @@ header h1
     transform-origin: top;
 }
 
-
 .post-image {
     margin: 5px;
 }
-
 
 @media screen and (max-width: 1105px) and (min-width: 488px){
     #big-col{
@@ -449,8 +345,6 @@ header h1
 }
 
 /* Blog Posts end */
-
-
 /* Building hero four supporting */
 
 .main-4support
@@ -512,7 +406,6 @@ header h1
     font-size: 18px;
     margin-left: 10px;
     margin-right: 10px;
-
 }
 
 .main-cta
@@ -618,10 +511,9 @@ header h1
         margin-left: 1px;
         margin-right: 1px;
     }
-    
 }
 
-
+/* Building hero four supporting */
 /* Blog Posts check boxes */
 
 .blog-post-checks 
@@ -649,69 +541,24 @@ header h1
 .css-check, .html-check, .personal-check
 {
     display: none;
-    text-align: center;
 }
 
 
-.toggle-css
-{
-    display: none;
-}
-
-.css-check:checked ~ div label div .static-css
-{
-    display: none;
-} 
-
-.css-check:checked ~ div label div .toggle-css
-{
-    display: flex;
-    text-align: center;
-} 
-
-
-.toggle-html
-{
-    display: none;
-}
-
-.html-check:checked ~ div label div .static-html
-{
-    display: none;
-} 
-
-.html-check:checked ~ div label div .toggle-html
+.html-check:checked ~ div label div .toggle-html, .personal-check:checked ~ div label div .toggle-personal, .css-check:checked ~ div label div .toggle-css
 {
     display: block;
 } 
 
 
-.toggle-personal
+.toggle-personal, .personal-check:checked ~ div label div .static-personal, .toggle-html, .html-check:checked ~ div label div .static-html, .css-check:checked ~ div label div .static-css, .toggle-css
 {
     display: none;
 }
 
-.personal-check:checked ~ div label div .static-personal
-{
-    display: none;
-} 
-
-.personal-check:checked ~ div label div .toggle-personal
-{
-    display: block;
-} 
-
-label div img
-{
-    height: auto;
-    width: auto;
-}
-
-h3
+h1, h3
 {
     text-align: center;
 }
-
 
 .icon-container
 {
@@ -735,7 +582,7 @@ h3
     position: relative;
 }
 
-.blog-card:hover
+.blog-card:hover, .blog-card-toggle:hover
 {
     border-color: purple;
     transition: border 500ms ease-out; 
@@ -767,12 +614,6 @@ h3
     background-color: orange;
 }
 
-h1
-{
-    text-align: center;
-}
-
-
 .blog-section-all, .blog-section-html, .blog-section-css, .blog-section-personal
 {
     height: auto;
@@ -784,61 +625,18 @@ h1
     justify-content: center;
 }
 
-.toggle-title
+.blog-section-html,.blog-section-css,.blog-section-personal,.toggle-title,
+.html-check:checked ~ .blog-section-all, .personal-check:checked ~ .blog-section-all, .css-check:checked ~ .blog-section-all
 {
     display: none;
 }
 
-
-.blog-section-html,
-.blog-section-css,
-.blog-section-personal
-{
-    display: none;
-}
-
-
-.html-check:checked ~ .blog-section-all,
-.personal-check:checked ~ .blog-section-all,
-.css-check:checked ~ .blog-section-all
-{
-    display: none;
-}
-
-.html-check:checked ~ .blog-section-html
+.html-check:checked ~ .blog-section-html, .personal-check:checked ~ .blog-section-personal, .css-check:checked ~ .blog-section-css
 {
     display: flex;
 }
-
-.personal-check:checked ~ .blog-section-personal
-{
-    display: flex;
-}
-
-.personal-check:checked ~ #personal-title
-{
-    display: block;
-}
-
-.html-check:checked ~ #html-title
-{
-    display: block;
-}
-
-.css-check:checked ~ #css-title
-{
-    display: block;
-}
-
-.css-check:checked ~ .blog-section-css
-{
-    display: flex;
-}
-
 
 @media screen and (max-width: 700px) {
-
-    
     .blog-card, .blog-card-toggle 
     {
         max-width: 90%;
@@ -868,33 +666,36 @@ h1
         margin-left: 0px;
         margin-right: 0px;
     }
-        
 }
 
 /* Blog Check box section finished, this was not fun */
-
 /* Blog articles */
+
+.code {
+    color: orange;
+    display: inline;
+    font-style: italic;
+    background-color: black;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-family: 'Ubuntu Mono', monospace;
+}
 
 .content-div
 {
     width: auto;
     max-width: 1200px;
     margin: auto;
-    position: relative;
     margin-bottom: 45px;
+    border-bottom: 3px solid black;
 }
 
-.page-title
+.page-title, .content-title
 {
     font-family: 'Permanent Marker', cursive;
     font-weight: lighter;
 }
 
-.content-title
-{
-    font-family: 'Permanent Marker', cursive;
-    font-weight: lighter;
-}
 
 .subtitle
 {
@@ -910,10 +711,87 @@ h1
     margin-right: 5px;
 }
 
-.content-div:after
-{
-    content: '';
-    width: 100%;
-    border-bottom: solid 3px rgb(94, 84, 109);
-    position: absolute;
+
+
+.image-split-2 {
+    height: auto;
+    padding: 10px;
+    padding-top: 0px;
+    padding-bottom: 20px;
+    margin-top: 0px;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    margin: 5px;
+}
+
+.left-image {
+    width: auto;
+    margin: 15px;
+    padding: 10px;
+    padding-top: 0px;
+    padding-bottom: 20px;
+    height: 40%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.right-image {
+    width: auto;
+    margin: 15px;
+    padding: 10px;
+    padding-top: 0px;
+    padding-bottom: 20px;
+    height: 40%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.pad-image {
+    max-height: 200px;
+    width: auto;
+    margin: 15px;
+
+}
+
+.wide-image{
+    max-width: 168px;
+    height: auto;
+    width: auto;
+}
+
+.inline-p {
+    display: inline;
+}
+.note {
+    color: black;
+    font-size: 16px;
+    margin: 0px;
+    padding-left: 15px;
+    font-weight: lighter;
+}
+
+.use {
+    color: black;
+    font-size: 16px;
+    margin: 0px;
+    padding-left: 15px;
+    font-weight: lighter;
+}
+
+.columns-internal {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.column-internal {
+    margin: auto;
+    margin-top: 0;
+}
+
+.personality {
+    width: auto;
+    max-width: 230px;
+    height: auto;
 }
