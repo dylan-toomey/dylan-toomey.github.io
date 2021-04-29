@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="..\styles\new.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital@1&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com"> <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <title>JavaScript Fundementals | Dylan Toomey</title>
+</head>
+<body>
+    <header>
+        <h1 class="logo">Dylan Toomey</h1>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <nav>
+            <ul>
+                <li><a href="https://dylan-toomey.github.io/">Home</a></li>
+                <li><a href="https://dylan-toomey.github.io/blog/all-blogs.html">Blog Posts</a></li>
+            </ul>
+        </nav>
+        <label for="nav-toggle" class="nav-toggle-label">
+            <span><img id="home-icon-open" class="home-icon-open" src="../images/menu.png" alt="Menu"></span>
+        </label> 
+    </header>
+    <main>
+        <h1>JavaScript Fundementals</h1>
+        <div class="content-div">
+            <h2 class="content-title">What are the differences between HTML and CSS</h2>
+            <p class="subtitle">A puzzle</p>
+            <p class="paragraph">I see the realationship bewtween HTML and CSS as like a puzzle. HTML is like throwing the puzzle peices out of the box. The content is all there and when scattered around on a table it has all the content then. It's only when we start positioning and organizing content can we create something that functionally displays the content in a way the is palatable by the end user.</p>
+            <p class="subtitle">So what's different</p>
+            <p class="paragraph">To say HTML and CSS are different is a common accaptence. The first main difference is that CSS is dependent on HTML. HTML can produce a website all be it a very strange looking thing but it can.</p>
+        </div>
+
+        <div class="content-div">
+            <h2 class="content-title">JavaScript Flow and loop controls</h2>
+            <p class="subtitle">Cleaning your car</p>
+            <p class="paragraph">The below is an example of how one might decide to clean there Car. They define how dirty the car is out of a positve number rating and then that determines how many times it needs to be cleaned. For example a car that is very dirty at a rating of 10 needs to be washed 10 times before it becomes a 0 rating of clean. The other important part of this function is that each cleaning of the car is seperate to another, once that car is cleaned the first time the dirt rating goes down by one then it decides if it needs to be cleaned again by checking if the dirt rating is greater than 0 if it is than it loops through needing to clean the car again.</p>
+            <div id="center">
+                <img src="../images/cleancar-flow.PNG" width=80% height=auto alt="Clean Car Process">
+            </div>
+        </div>
+
+        <div class="content-div">
+            <h2 class="content-title">What is the DOM and how to interact with it.</h2>
+            <p class="paragraph">The DOM stand for Document Object Model. It represents the logical strucutre of a document. Can look at it this way our world is based on time. <br><span class="code">World > Century > Decade > Year > Month > Week > Day/Date > Hour > Minute > Second</span><br>This is kinda like what the DOM does just for documents but also is a a little bit more complicated way. There are multiple faceets to the DOM and can get very complicated. The simple sort of version I like to work with can be visualized below. But again there are many more branches that span in many different directions and this is a simplified view of it.</p>
+            <div id="center">
+                <img src="../images/theDom.png" width=35% height=auto alt="The DOM">
+            </div>
+            <p class="subtitle">Lets interact with it</p>
+            <p class="paragraph">This is a JavaScript Fundementals post so the focus on interacting with it's going to be linked to JavaScript.</p>
+            <p class="paragraph">When interacting with the DOM in the inspection model you can right click on any element and <span class="code">Copy JS path</span> what this does is copy something like the below to your clipboard. There is actually quite a few things like this in the DOM that I am picking up along the way.</p>
+            <p class="paragraph"><span class="code">document.querySelector("body > main > div:nth-child(4)")</span> I would not recomend doing it this way as it depends on the elements position in the document which may not always be in that position but gives you the idea of how the DOM can be useful.</p>
+            <p class="paragraph">If you where to use this type of selector in JavaScript it would target that specfic element copied and apply any changes you wanted to it.</p>
+            <p class="paragraph">Essentially the DOM defines a logically process of how we can use JavaScript to target specific elemtents on a page.</p> 
+        </div>
+
+        <div class="content-div">
+            <h2 class="content-title">Accessing Data from Arrays and Objects</h2>
+            <p class="subtitle">An Array</p>
+            <p class="paragraph">An Array is a list of data. Like the below</p>
+            <p class="paragraph"><span class="code">let racketSports = ['tennis', 'squash', 'badminton', 'table tennis']</span> This varaible racketSports creates an array of the racket sports.</p>
+            <p class="subtitle">Objects</p>
+            <p class="paragraph">An object is a list of data that is stored against ID's</p>
+            <p class="paragraph"><span class="code">let computer = {lenovo: {ram : '15gb', price: 800}, apple: {ram : '12gb', price: 1500}};</span> This varaible allows us to have multiply brands of computers stored in one varaible.</p>
+            <p class="subtitle">How can we access them (using the variables sets above)</p>
+            <p class="paragraph">The way each of these are accesed are different. As you may have guessed the Object method is more complicated and is more complicated to extract the data out of.</p>
+            <p class="subtitle">Array list, how to get some values out of the array.</p>
+            <p class="paragraph"><span class="code">racketSports[1]</span><span> the second value in the array, which is "squash"</span></p>
+            <p class="paragraph"><span class="code">racketSports.length</span><span> the amount of values in the array</span></p>
+            <p class="subtitle">Object list, how to get some values out of the object.</p>
+            <p class="paragraph"><span class="code">computer['lenovo']</span><span> gives the whole nested values of Lenovo.</span></p>
+            <p class="paragraph"><span class="code">Object.keys(computer)</span><span> gives all the keys that are in the list. Lenovo and Apple</span></p>
+        </div>
+
+
+        <div class="content-div">
+            <h2 class="content-title">What are Functions and why are the usefull</h2>
+            <p class="paragraph">Functions are a peice of code designed to be reused, they take varialbes into the function and ouput a result. They are extremely usefull because they only function when called upon as well. This is a great time saver when coding. A function should be used when the is a relationship between the inputed varaible when called upon and the output. Such as how many times the car needed to be cleaned.</p>
+
+            <p class="paragraph">In my above example with washing the car that was a function. Above the function is where I called it to run. When it was called on to run I also passed through a varaible of how dirty the car was. In a completely different world someone may want to see how many times they have to clean there car if at 5 or 7 values of dirt so the function could be re-used its not staticly locked to a 10 rating of dirt.</p>
+        </div>
+
+    </main>
+
+</main>
+</body>
+<script> </script>
+</html>

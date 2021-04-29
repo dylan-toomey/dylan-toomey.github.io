@@ -555,7 +555,7 @@ header h1
     display: none;
 }
 
-h1, h3
+h1, h3, #center
 {
     text-align: center;
 }
@@ -609,9 +609,9 @@ h1, h3
     background-color: thistle;
 }
 
-#html
+#js
 {
-    background-color: orange;
+    background-color: rgb(247, 223, 30);
 }
 
 .blog-section-all, .blog-section-html, .blog-section-css, .blog-section-personal
