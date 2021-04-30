@@ -50,7 +50,8 @@
             <p class="subtitle">Lets interact with it</p>
             <p class="paragraph">This is a JavaScript Fundementals post so the focus on interacting with it's going to be linked to JavaScript.</p>
             <p class="paragraph">When interacting with the DOM in the inspection model you can right click on any element and <span class="code">Copy JS path</span> what this does is copy something like the below to your clipboard. There is actually quite a few things like this in the DOM that I am picking up along the way.</p>
-            <p class="paragraph"><span class="code">document.querySelector("body > main > div:nth-child(4)")</span> I would not recomend doing it this way as it depends on the elements position in the document which may not always be in that position but gives you the idea of how the DOM can be useful.</p>
+            <p class="paragraph"><span class="code">document.querySelector("body > main > div:nth-child(4)");</span> I would not recomend doing it this way as it depends on the elements position in the document which may not always be in that position but gives you the idea of how the DOM can be useful. Something like this would be better we you can identify an ID defined in the HTML <span class="code">document.getElementById('blue');</span> This targets ID's</p>
+            <p class="paragraph"><span class="code">document.getElementsByClassName('changecolor');</span> This targets Classes</p>
             <p class="paragraph">If you where to use this type of selector in JavaScript it would target that specfic element copied and apply any changes you wanted to it.</p>
             <p class="paragraph">Essentially the DOM defines a logically process of how we can use JavaScript to target specific elemtents on a page.</p> 
         </div>
