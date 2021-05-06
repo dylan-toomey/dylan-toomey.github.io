@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="..\styles\new.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital@1&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com"> <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <title>Problem Solving | Dylan Toomey</title>
+</head>
+
+<body>
+    <header>
+        <h1 class="logo">Dylan Toomey</h1>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <nav>
+            <ul>
+                <li><a href="https://dylan-toomey.github.io/">Home</a></li>
+                <li><a href="https://dylan-toomey.github.io/blog/all-blogs.html">Blog Posts</a></li>
+            </ul>
+        </nav>
+        <label for="nav-toggle" class="nav-toggle-label">
+            <span><img id="home-icon-open" class="home-icon-open" src="../images/menu.png" alt="Menu"></span>
+        </label> 
+    </header>
+
+    <main>        
+        <h1>Problem Solving</h1>
+        <div class="content-div">
+            <p class="subtitle">
+                How I got blocked on a simple problem.
+            </p>
+            <p class="paragraph">
+                I was blocked for quite a while on an excersise in JavaScript. I wanted to create a function that would allow users to add a test score to a list of all the students test scores. For some reason this caused me a lot issues. I used all my elegance which is siimilar to a 8 month old baby doing a shape puzzle. Pretty much I through everything I could think of at it. I console.logged everything this was probably the most elegant part of my problem solving method used. I logged every single bit of that function to the console at some point. Found out that at xyz point it was returning undefined. But for the life of me I did not know why. I tried the brute force sort of method of trying stuff that I googled. "what happens if I do this" sort of idea. It turned it was something stupidly trival like the variable wasn't passed in the function I can't quite remember it exactly, all I remember was moving something from the line above the function argument to inside the function argument, then it worked. I think what I learned in this problem solving scenario is that the answer does not have to be complicated, possibly the rubber ducky method could have helped me here a lot.
+            </p>
+        </div>
+
+        <div class="content-div">
+            <h2 class="content-title">Problem Solving Techniques</h2>
+            <p class="subtitle">
+                Psuedocode
+            </p>
+            <p class="paragraph">
+                This method involves typing out a function in a comment that is understanbable in plain english. <span class="code">A team scores add an extra score to the home team in a football match</span> vs <span class="code">return match['home']['score']++</span>
+            </p>
+            <p class="paragraph">
+                I feel somewhatt cofident with this method, the one thing I do struggle with it is converting the thought into words on the screen. I feel like in my mind I think about it and how it would work (I don't think about the code im going to write intially in coding mindset). I don't tend to type it down though. Doing this would be a good start to feeling more confident in this method.
+            </p>
+            <p class="subtitle">
+                Trying Something
+            </p>
+            <p class="paragraph">
+                I think this is a method that can differ people, to me its like through mud at a wall untill something sticks. The importants part here is that most likley the first thing you get to stick is probably not very good or ideal, it will likely need refactoring.
+            </p>
+            <p class="paragraph">
+                I feel confident with this method. It's probably my third favourite method. To me it works in tandem with the googling method quite well, its often getting that small peice of code from a larger script posted on Stack overflow that could solve my issues.
+            </p>
+            <p class="subtitle">
+                Rubby Ducky
+            </p>
+            <p class="paragraph">
+                I like this method a lot. The way it works is that you describe the function or peice of code to some inanimate object that knows nothing about code. The idea is that when describing what the code is supposed to do and observing what it actually does, any differences between these two becomes apparent.
+            </p>
+            <p class="paragraph">
+                Right now for me this method is good for finding out where the problem is. I feel like I don't know/remember enough code to use this on its own. I'll use this to find where the problem is then dive into google adn other methods.
+            </p>
+            <p class="subtitle">
+                Reading error messages
+            </p>
+            <p class="paragraph">
+                Reading the error messages is arguabale the most important part of problem solving. The error message first of all will show you what the line error is on. Typically you may right two or three lines of code before running it the terminal. So without that error message reference you could be lost where it is. The issues with this is the sometimes the problem is not an error. Its an error in your opinion but the code works error free. If the terminal gives you no error message but you did not get the right result than your code works just not how you wanted it too.
+            </p>
+            <p class="paragraph">
+                I'm not too confident with this. Some terminals I have used explain what is going on quite well with others telling me what seems utter gibberish. I think the JavaScript error messages are actually quite descriptive all in all compared to some other coding language error messages.
+            </p>
+            <p class="subtitle">
+                Console.log
+            </p>
+            <p class="paragraph">
+                This method involves console.logging parts of the code with the problem. It seems to work quite well with the rubby ducky method, you are checking at each point of the code that the output is what expected. 
+            </p>
+            <p class="paragraph">
+                This is my favourite method to problem solve. Before I do anything else I chuck console.logs everywhere to what is resulting at each part/line of the code. More often than note i'll see what the issue is something like duplicated spaces, then google that becomes a lot easier. Rather than sifting through 100's of how to remove a string from a string search. I think I can be more granual with google searching when I console.log the issues.
+            </p>
+            <p class="subtitle">
+                Google
+            </p>
+            <p class="paragraph">
+                This ones is straight forward you ask google what's going on. The gotcha is formatting the search phrase in a way that gets the result you want. You can search the error message, which I know for Python is a really good start. Googling can be time consuming though. There is so much information out there and so much can match what you want to know. Googling in my opinion won't always solve the problem with a copy pasta. Sometimes it means wathcing a video or reading a block of code to see what's going on and what parts you could bring into your code.
+            </p>
+            <p class="paragraph">
+                To me google is such a over arhcing name to this method of problem solving, I would call this google/research. I don't tend to find the exact soloution of how do I convert this into that rather break it down into single steps and research each step. For me it feels like I will research what does <span class="code">.assign</span> do to the array or methods to assign values to array. Then find the correct one to use in its place.
+            </p>
+            <p class="paragraph">
+                This is my second favourite method when it comes to problem solving. Often I  google something and I find that my way of doing it the first place was stupid. What I could have done in three lines took me a for loop and 4 more lines of code. Where I struggle with google though is that there is a lot of adavanced topics in the potential soloutions to my issue. I don't understand what they do so I don't use them until I do. Which often sends me down a rabiit hole.
+            </p>
+            <p class="subtitle">
+                Asking Peers/Coaches for help
+            </p>
+            <p class="paragraph">
+                No one knows everything google may know everything but you might not know how to get that answer. This is where talking to other people comes in handy. Your peers and coaches will look at your problem with fresh eyes and provide soloutions you can not see or didn't know exist.
+            </p>
+            <p class="paragraph">
+                I have asked my coach/faciltator for help when I just can't seem to get something to work. I haven't asked my peers about any issues I am having, I feel like this has to be the last resort. The odd thing is I never view others asking for help like this. Rather that there is a lot of smart people doing this course and to get there opinions and thoughts is valuable.
+            </p>
+            <p class="subtitle">
+                Improving your process with reflection
+            </p>
+            <p class="paragraph">
+                
+            </p>
+            <p class="paragraph">
+                I don't feel that confident on this one. I have done some reflection on the code I have written. Once I got the pass in the Kata challanges I would look at the sample-soloutions and compare them to what I did. Some where near enough identical apart from variable names, and others mainly the "Built-in-methods" one was completely different. When I saw these sample soloutions I went back to my code to comment it out to see how I could re work it better and understand what was happening in the sample soloutions.
+            </p>
+        </div>
+
+    </main>
+
+</main>
+</body>
+<script> </script>
+</html>
